@@ -1,0 +1,152 @@
+/* Header */
+.Pokedex-header h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ff3e3e;
+  text-shadow: 1px 1px #222;
+  margin: 0;
+  padding: 1rem 0;
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pokemon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+  width: 18%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  transition: all 0.3s ease;
+}
+
+.pokemon-item:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px #ccc;
+}
+
+.pokemon-name {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+
+/* Pokemon item */
+.pokemon-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Pokemon details */
+.pokemon-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-details h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  color: #ff3e3e;
+  text-shadow: 1px 1px #222;
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.pokemon-details h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  color: #444;
+}
+
+.pokemon-details ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pokemon-details img {
+  margin: auto; 
+  display: flex;
+}
+
+.pokemon-details li {
+  flex: 0 0 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1.5rem;
+  color: #444;
+  text-transform: capitalize;
+}
+.pokemon-evolutions p ,h3{
+display: flex;
+justify-content: center;
+}
+
+.pokemon-details table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.pokemon-details th,
+.pokemon-details td {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #444;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.pokemon-details th {
+  font-weight: bold;
+  color: #ff3e3e;
+  text-shadow: 1px 1px #222;
+  letter-spacing: 5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.pokemon-details td {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-details td:first-child {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .pokemon-details ul {
+    flex-direction: column;
+  }
+
+  .pokemon-details li {
+    flex: 1 0 auto;
+  }
+}
